@@ -52,7 +52,7 @@ func FindCurrencyCurrencies(currentType string) (models.Response, error) {
 	}()
 	// read from channel as they come in until its closed
 	for res := range ch {
-		log.Println(res)
+		//	log.Println(res)
 		responses = append(responses, res)
 	}
 
